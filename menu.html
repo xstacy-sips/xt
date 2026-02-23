@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xstacy Menu (Standalone)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Playpen+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Playpen+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+   <nav>
+        <div class="logo-container">
+            <a href="index.html"> 
+                <img src="assets\images\logo\logo.png" alt="Xstacy Logo" class="logo-image">
+            </a>
+        </div>
+        <div class="mobile-menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  
+    <section class="page-header">
+      <h1>What will you have ?</h1>
+      <p>Making The World Smile, One Sip at a Time!</p>
+    </section>
+
+    <section class="menu">
+      <div class="container" style="padding: 0;">
+        <div id="tag-filter-root"></div>
+        <div id="menu-root"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
+<footer>
+        <div class="footer-content">
+            <img src="assets/images/logo/text_white.png" alt="Xstacy Logo" class="footer-logo-img">
+            <!-- <img src="image/xstacy-text-logo.png" alt="Xstacy" class="footer-text-logo"> -->
+            <p class="footer-tagline">Making The World Smile, One Sip at a Time</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 xstacy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
