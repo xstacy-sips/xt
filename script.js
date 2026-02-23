@@ -568,14 +568,14 @@ const menuData = {
       if (item.priceSmall) {
         const mini = document.createElement('div');
         mini.className = 'price-block price-mini';
-        mini.innerHTML = `<span class="price-amount">${item.priceSmall}</span><span class="price-label">Mini</span>`;
+        mini.innerHTML = `<span class="price-amount">${item.priceSmall}</span><span class="price-label">For kids</span>`;
         prices.appendChild(mini);
       }
 
       if (item.price) {
         const regular = document.createElement('div');
         regular.className = 'price-block price-regular';
-        regular.innerHTML = `<span class="price-amount price-large">${item.price}</span><span class="price-label">Reguler</span>`;
+        regular.innerHTML = `<span class="price-amount price-large">${item.price}</span><span class="price-label">For Adults</span>`;
         prices.appendChild(regular);
       }
 
@@ -598,32 +598,90 @@ const menuData = {
       return tagPriority.filter((tag) => used.has(tag));
     };
 
+    // const applyTagFilters = () => {
+    //   const activeTags = Array.from(selectedTags);
+    //   const hasActive = activeTags.length > 0;
+
+    //   document.querySelectorAll('.menu-item').forEach((card) => {
+    //     const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
+    //     // const matches = !hasActive || itemTags.some((tag) => selectedTags.has(tag));
+    //     const matches = !hasActive || Array.from(selectedTags).every((tag) => itemTags.includes(tag));
+    //     card.style.display = matches ? '' : 'none';
+    //   });
+
+    //   document.querySelectorAll('.menu-category').forEach((section) => {
+    //     const items = section.querySelectorAll('.menu-item');
+    //     const hasVisible = Array.from(items).some((item) => item.style.display !== 'none');
+    //     section.style.display = hasVisible ? '' : 'none';
+
+    //     if (hasActive && hasVisible) {
+    //       const toggle = section.querySelector('.category-toggle');
+    //       const content = section.querySelector('.category-content');
+    //       const chevron = section.querySelector('.category-chevron');
+    //       content.classList.add('open');
+    //       chevron.classList.add('open');
+    //       toggle.setAttribute('aria-expanded', 'true');
+    //     }
+    //   });
+    // };
+
     const applyTagFilters = () => {
-      const activeTags = Array.from(selectedTags);
-      const hasActive = activeTags.length > 0;
+  const activeTags = Array.from(selectedTags);
+  const hasActive = activeTags.length > 0;
 
-      document.querySelectorAll('.menu-item').forEach((card) => {
-        const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
-        // const matches = !hasActive || itemTags.some((tag) => selectedTags.has(tag));
-        const matches = !hasActive || Array.from(selectedTags).every((tag) => itemTags.includes(tag));
-        card.style.display = matches ? '' : 'none';
+  document.querySelectorAll('.menu-category').forEach((section) => {
+    const grid = section.querySelector('.menu-grid');
+    const cards = Array.from(section.querySelectorAll('.menu-item'));
+
+    if (!hasActive) {
+      // Reset display and original order
+      cards.forEach(card => {
+        card.style.display = '';
+        card.style.order = '';
       });
+      section.style.display = '';
+      return;
+    }
 
-      document.querySelectorAll('.menu-category').forEach((section) => {
-        const items = section.querySelectorAll('.menu-item');
-        const hasVisible = Array.from(items).some((item) => item.style.display !== 'none');
-        section.style.display = hasVisible ? '' : 'none';
+    const scored = [];
 
-        if (hasActive && hasVisible) {
-          const toggle = section.querySelector('.category-toggle');
-          const content = section.querySelector('.category-content');
-          const chevron = section.querySelector('.category-chevron');
-          content.classList.add('open');
-          chevron.classList.add('open');
-          toggle.setAttribute('aria-expanded', 'true');
-        }
-      });
-    };
+    cards.forEach(card => {
+      const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
+
+      // Count how many selected tags match
+      const matchCount = activeTags.filter(tag => itemTags.includes(tag)).length;
+
+      if (matchCount > 0) {
+        scored.push({ card, matchCount });
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Sort by highest match count first
+    scored.sort((a, b) => b.matchCount - a.matchCount);
+
+    // Reorder visually
+    scored.forEach((item, index) => {
+      item.card.style.order = index;
+    });
+
+    const hasVisible = scored.length > 0;
+    section.style.display = hasVisible ? '' : 'none';
+
+    if (hasVisible) {
+      const toggle = section.querySelector('.category-toggle');
+      const content = section.querySelector('.category-content');
+      const chevron = section.querySelector('.category-chevron');
+
+      content.classList.add('open');
+      chevron.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+  });
+};
+
 
     const renderTagFilters = () => {
       const tags = getAllUsedTags();
