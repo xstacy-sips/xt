@@ -1,4 +1,4 @@
-// Mobile menu toggle
+﻿// Mobile menu toggle
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
     navLinks.classList.toggle('active');
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
+              observer.unobserve(entry.target); // animate only once
             }
         });
     }, observerOptions);
@@ -58,7 +59,7 @@ const menuData = {
     items: [
       {
         name: 'Purple Haze',
-        description: 'Lavender & Berries | Floral & Fruity \nSweetness: ⬤⬤⬤〇〇\nBest for: Relaxation',
+        description: 'Lavender & Berries | Floral & Fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Relaxation',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try'],
@@ -66,7 +67,7 @@ const menuData = {
       },
       {
         name: 'Blockbuster',
-        description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤⬤〇〇 \nBest for: Adventure seekers',
+        description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Adventure seekers',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try']
@@ -460,7 +461,28 @@ const menuData = {
     const tagPriority = ['Best Seller', 'Must Try', 'New', 'Refreshing', 'Sweet', 'Unique', 'Xstatic'];
     const selectedTags = new Set();
 
-    const badgeClass = (badge) => badge.toLowerCase().replace(/\s+/g, '-');
+    const badgeSlug = (badge) => {
+      const normalized = normalizeBadgeLabel(badge).toLowerCase();
+      if (normalized === 'must try') return 'musttry';
+      if (normalized === 'best seller') return 'bestseller';
+      return normalized.replace(/\s+/g, '-');
+    };
+    const normalizeBadgeLabel = (badge) => {
+      const text = String(badge || '').trim();
+      if (!text) return '';
+      const normalized = text.toLowerCase();
+      if (normalized === 'must try' || normalized === 'must-try') return 'Must Try';
+      if (normalized === 'bestseller' || normalized === 'best seller' || normalized === 'best-seller') return 'Best Seller';
+      if (normalized === 'new') return 'New';
+      if (normalized === 'refreshing') return 'Refreshing';
+      if (normalized === 'sweet') return 'Sweet';
+      if (normalized === 'unique') return 'Unique';
+      if (normalized === 'xstatic') return 'Xstatic';
+      return text
+        .split(/\s+/)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+        .join(' ');
+    };
     const includesAny = (text, words) => words.some((word) => text.includes(word));
 
     const inferBadges = (item) => {
@@ -472,32 +494,29 @@ const menuData = {
       const text = `${item.name || ''} ${item.description || ''}`.toLowerCase();
 
       (item.badges || []).forEach((badge) => {
-        const normalized = String(badge || '').toLowerCase().trim();
-        if (normalized === 'must try' || normalized === 'must-try') add('Must Try');
-        if (normalized === 'bestseller' || normalized === 'best seller' || normalized === 'best-seller') add('Best Seller');
-        if (normalized === 'new') add('New');
-        if (normalized === 'refreshing') add('Refreshing');
-        if (normalized === 'sweet') add('Sweet');
-        if (normalized === 'unique') add('Unique');
-        if (normalized === 'xstatic') add('Xstatic');
+        const label = normalizeBadgeLabel(badge);
+        if (label) add(label);
       });
 
       if (includesAny(text, ['mint', 'lemon', 'lime', 'cucumber', 'watermelon', 'kiwi', 'cooling', 'refresh', 'icy', 'hydrating', 'fizzy', 'sparkling'])) add('Refreshing');
-      if (includesAny(text, ['sweet', 'chocolate', 'caramel', 'vanilla', 'strawberr', 'berry', 'mango', 'litchi', 'rose', 'cookie', 'biscoff', 'dessert', 'custard'])) add('Sweet');
+      if (includesAny(text, ['sweet', 'chocolate', 'caramel', 'vanilla', 'strawberry', 'berry', 'mango', 'litchi', 'rose', 'cookie', 'biscoff', 'dessert', 'custard'])) add('Sweet');
       if (includesAny(text, ['lavender', 'popcorn', 'fennel', 'cumin', 'moringa', 'twist', 'mysterious', 'theatrical', 'adventure', 'fusion'])) add('Unique');
       if (includesAny(text, ['energy', 'energizing', 'boost', 'protein', 'coffee', 'strength', 'powerhouse'])) add('Xstatic');
-      if (includesAny(text, ['fresh', 'freshly', 'seasonal', 'new'])) add('New');
+      // if (includesAny(text, ['fresh', 'freshly', 'seasonal', 'new'])) add('New');
 
       if (!result.includes('Best Seller') && includesAny(text, ['specialty', 'signature', 'classic', 'popular'])) add('Must Try');
 
-      return tagPriority.filter((label) => result.includes(label)).slice(0, 3);
+      const prioritized = tagPriority.filter((label) => result.includes(label));
+      const extras = result.filter((label) => !tagPriority.includes(label));
+      return [...prioritized, ...extras];
     };
 
     const createMenuItem = (item) => {
       const card = document.createElement('article');
       card.className = `menu-item ${item.outOfStock ? 'out-of-stock' : ''}`;
       const autoBadges = inferBadges(item);
-      card.dataset.tags = autoBadges.map((badge) => badgeClass(badge)).join(' ');
+      const visibleBadges = autoBadges.slice(0, 3);
+      card.dataset.tags = autoBadges.map((badge) => badgeSlug(badge)).join(' ');
 
       const imageSrc = item.name
         ? `./assets/images/Doddel Drinks/${encodeURIComponent(item.name)}.jpg`
@@ -507,7 +526,7 @@ const menuData = {
         const media = document.createElement('div');
         media.className = 'menu-item-media';
 
-        if (autoBadges.length || item.outOfStock) {
+        if (visibleBadges.length || item.outOfStock) {
           card.classList.add('has-badges');
 
           const header = document.createElement('div');
@@ -523,9 +542,9 @@ const menuData = {
             badges.appendChild(out);
           }
 
-          autoBadges.forEach((badge) => {
+          visibleBadges.forEach((badge) => {
             const tag = document.createElement('span');
-            tag.className = `badge ${badgeClass(badge)}`;
+            tag.className = `badge badge-${badgeSlug(badge)}`;
             tag.innerHTML = `<span class="badge-text">${badge}</span>`;
             badges.appendChild(tag);
           });
@@ -595,7 +614,11 @@ const menuData = {
           inferBadges(item).forEach((badge) => used.add(badge));
         });
       });
-      return tagPriority.filter((tag) => used.has(tag));
+      const prioritized = tagPriority.filter((tag) => used.has(tag));
+      const extras = Array.from(used)
+        .filter((tag) => !tagPriority.includes(tag))
+        .sort((a, b) => a.localeCompare(b));
+      return [...prioritized, ...extras];
     };
 
     // const applyTagFilters = () => {
@@ -710,7 +733,7 @@ const menuData = {
       };
 
       makeChip('All', 'all', true);
-      tags.forEach((tag) => makeChip(tag, badgeClass(tag)));
+      tags.forEach((tag) => makeChip(tag, badgeSlug(tag)));
 
       const syncChipState = () => {
         chips.forEach((chip) => {
@@ -767,18 +790,18 @@ const menuData = {
       const chevron = document.createElement('span');
       chevron.className = 'category-chevron';
       chevron.setAttribute('aria-hidden', 'true');
-      chevron.textContent = '?';
+      chevron.textContent = '▾';
 
       titleRow.appendChild(chevron);
       title.appendChild(titleRow);
+      let subtitle = null;
 
       if (category.subtitle) {
-        const subtitle = document.createElement('span');
+        subtitle = document.createElement('span');
         subtitle.className = 'category-subtitle';
         subtitle.textContent = category.subtitle;
         title.appendChild(subtitle);
       }
-
       toggle.appendChild(title);
 
       const content = document.createElement('div');
@@ -800,6 +823,12 @@ const menuData = {
         const open = content.classList.toggle('open');
         chevron.classList.toggle('open', open);
         toggle.setAttribute('aria-expanded', String(open));
+
+  // Hide subtitle when open
+        if (subtitle) {
+          // subtitle.style.display = open ? 'none' : 'block';
+           subtitle.classList.toggle('hidden', open);
+          }
       });
 
       wrap.appendChild(toggle);
@@ -807,28 +836,89 @@ const menuData = {
       return wrap;
     };
 
-    categoryOrder.forEach((key) => {
-      if (menuData[key]) {
-        menuRoot.appendChild(createCategory(menuData[key]));
-      }
-    });
-
-    renderTagFilters();
-    applyTagFilters();
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+    if (menuRoot && tagFilterRoot) {
+      categoryOrder.forEach((key) => {
+        if (menuData[key]) {
+          menuRoot.appendChild(createCategory(menuData[key]));
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
-    document.querySelectorAll('.menu-item').forEach((el) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'all 0.6s ease-out';
-      observer.observe(el);
+      renderTagFilters();
+      applyTagFilters();
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target); // animate only once
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+      document.querySelectorAll('.menu-item').forEach((el, index) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = `
+          opacity 0.8s cubic-bezier(.4,0,.2,1),
+          transform 0.8s cubic-bezier(.4,0,.2,1)
+        `;
+        el.style.transitionDelay = `${index * 60}ms`; // stagger effect
+        observer.observe(el);
+      });
+    }
+
+
+// Premium Motion Engine for Xstacy
+
+const motion = {
+  mouseX: 0,
+  mouseY: 0,
+  currentX: 0,
+  currentY: 0,
+  speed: 0.07,
+  objects: document.querySelectorAll('.float-object'),
+  canAnimate: !window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.matchMedia('(pointer:fine)').matches && window.innerWidth > 768
+};
+
+if (motion.canAnimate && motion.objects.length) {
+  document.addEventListener('mousemove', (event) => {
+    motion.mouseX = (event.clientX - window.innerWidth / 2) / window.innerWidth;
+    motion.mouseY = (event.clientY - window.innerHeight / 2) / window.innerHeight;
+  });
+
+  const animateMotion = () => {
+    motion.currentX += (motion.mouseX - motion.currentX) * motion.speed;
+    motion.currentY += (motion.mouseY - motion.currentY) * motion.speed;
+
+    motion.objects.forEach((obj) => {
+      const depth = parseFloat(getComputedStyle(obj).getPropertyValue('--depth')) || 16;
+      const moveX = motion.currentX * depth;
+      const moveY = motion.currentY * depth;
+      obj.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
     });
 
+    requestAnimationFrame(animateMotion);
+  };
+
+  animateMotion();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section, .about-card, .preview-card, .gallery-item, .info-card, .story-content, .section-title');
+  if (!sections.length) return;
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+  sections.forEach((el) => {
+    el.classList.add('reveal-on-scroll');
+    revealObserver.observe(el);
+  });
+});

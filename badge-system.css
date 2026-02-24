@@ -1,0 +1,155 @@
+:root {
+  --badge-radius: 999px;
+  --badge-padding: 4px 10.5px;
+  --badge-transition: all 0.25s ease;
+  --badge-font-size: 12px;
+  --badge-font-weight: 600;
+  --badge-letter-spacing: 0.01em;
+  /* --badge-border-width: 1px; */
+  --badge-glow-alpha: 0.18;
+}
+
+.badge {
+  --badge-bg: #E0E7FF;
+  --badge-text: #3752A3;
+  --badge-border: #3752A3;
+  /* --badge-shadow: 0 1px 2px rgba(15, 11, 6, 0.08),
+    0 0 0 1px color-mix(in srgb, var(--badge-border) 28%, transparent),
+    0 6px 16px color-mix(in srgb, var(--badge-border) 16%, transparent);
+  --badge-shadow-hover: 0 2px 4px rgba(15, 11, 6, 0.1),
+    0 0 0 1px color-mix(in srgb, var(--badge-border) 45%, transparent),
+    0 10px 24px color-mix(in srgb, var(--badge-border) 26%, transparent); */
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--badge-radius);
+  padding: var(--badge-padding);
+  font-family: "Nunito", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  letter-spacing: var(--badge-letter-spacing);
+  line-height: 1;
+  color: var(--badge-text);
+  background: var(--badge-bg);
+  border: var(--badge-border-width) solid var(--badge-border);
+  box-shadow: var(--badge-shadow);
+  transition: var(--badge-transition);
+  user-select: none;
+  white-space: nowrap;
+  transform: translateZ(0);
+  animation: badgeFloat 3.6s ease-in-out infinite;
+}
+
+.badge::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--badge-border) 38%, transparent);
+  transition: var(--badge-transition);
+}
+
+.badge:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: var(--badge-shadow-hover);
+}
+
+.badge:hover::after {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--badge-border) 18%, transparent);
+}
+
+.badge:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+@keyframes badgeFloat {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .badge {
+    animation: none;
+    transition: none;
+  }
+}
+
+.badge-refreshing {
+  --badge-bg: #E3F6FF;
+  --badge-text: #0EA5E9;
+  --badge-border: #38BDF8;
+}
+
+.badge-fruity {
+  --badge-bg: #FFE4EC;
+  --badge-text: #DB2777;
+  --badge-border: #F472B6;
+}
+
+.badge-classic {
+  --badge-bg: #F4EFEA;
+  --badge-text: #6B4F3A;
+  --badge-border: #A07855;
+}
+
+.badge-sweet {
+  --badge-bg: #FFF4D6;
+  --badge-text: #D97706;
+  --badge-border: #FBBF24;
+}
+
+.badge-unique {
+  --badge-bg: #F3E8FF;
+  --badge-text: #7C3AED;
+  --badge-border: #A78BFA;
+}
+
+.badge-musttry {
+  --badge-bg: #FFF7ED;
+  --badge-text: #EA580C;
+  --badge-border: #FB923C;
+}
+
+.badge-bestseller {
+  --badge-bg: #FFE4E6;
+  --badge-text: #DC2626;
+  --badge-border: #F87171;
+}
+
+.badge-energetic {
+  --badge-bg: #ECFEFF;
+  --badge-text: #0891B2;
+  --badge-border: #22D3EE;
+}
+
+.badge-xstatic {
+  --badge-bg: #E0E7FF;
+  --badge-text: #3752A3;
+  --badge-border: #3752A3;
+}
+
+.badge-premium {
+  --badge-bg: #F5F3FF;
+  --badge-text: #5B21B6;
+  --badge-border: #8B5CF6;
+}
+
+.badge-new {
+  --badge-bg: #ECFDF5;
+  --badge-text: #059669;
+  --badge-border: #34D399;
+}
+
+.badge-experimental {
+  --badge-bg: #EEF2FF;
+  --badge-text: #4338CA;
+  --badge-border: #6366F1;
+}

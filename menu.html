@@ -1,40 +1,28 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xstacy Menu (Standalone)</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Playpen+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&family=Playpen+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="badge-system.css">
 </head>
 <body>
 
-   <nav>
-        <div class="logo-container">
-            <a href="index.html"> 
-                <img src="assets\images\logo\logo.png" alt="Xstacy Logo" class="logo-image">
-            </a>
-        </div>
-        <div class="mobile-menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="menu.html" class="active">Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+   <nav class="center-nav">
+    <div class="logo-container" >
+        <a href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Xstacy Logo" class="logo-image">
+        </a>
+    </div>
+</nav>
   
     <section class="page-header">
       <h1>What will you have ?</h1>
-      <p>Making The World Smile, One Sip at a Time!</p>
     </section>
+    
 
     <section class="menu">
       <div class="container" style="padding: 0;">
@@ -42,6 +30,7 @@
         <div id="menu-root"></div>
       </div>
     </section>
+    
 
     <script src="script.js"></script>
 
@@ -57,3 +46,4 @@
 
 </body>
 </html>
+
