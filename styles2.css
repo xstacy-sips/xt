@@ -371,10 +371,10 @@ nav {
 
 footer {
   margin-top: 1rem;
-  background: linear-gradient(180deg, var(--primary), var(--accent-brown));
+  background: var(--primary) ;
   color: var(--background);
   text-align: center;
-  padding: 2.1rem 5%;
+  padding: 1.5rem 5%;
 }
 
 .footer-content {
@@ -383,15 +383,15 @@ footer {
 }
 
 .footer-text-logo {
-  width: min(250px, 70vw);
+  width: min(190px, 72vw);
   height: auto;
   margin: 0 auto 1rem;
   display: block;
 }
 
 .footer-bottom {
-  margin-top: 0.85rem;
-  padding-top: 0.85rem;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
   border-top: 0;
 }
 

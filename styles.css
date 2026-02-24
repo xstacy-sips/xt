@@ -17,6 +17,8 @@
   --spacing-xl: 6rem;
   --radius-lg: 24px;
   --radius-md: 16px;
+  --section-gap: clamp(1.5rem, 4vw, 3rem);
+  --content-gap: 0.85rem;
 }
 
 html {
@@ -138,7 +140,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 110px 5% 70px;
+  padding: 110px 5% 84px;
   background: var(--background);
   overflow: hidden;
 }
@@ -150,7 +152,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 110px 5% 70px;
+  padding: 110px 5% 84px;
   background: var(--background);
   overflow: hidden;
 }
@@ -182,7 +184,7 @@ nav {
   text-align: center;
   color: var(--primary);
   font-weight: 700;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: 1.15rem;
 }
 
 .section-title::after {
@@ -203,8 +205,13 @@ nav {
   font-size: clamp(1rem, 2vw, 1.18rem);
 }
 
+.story-content {
+  display: grid;
+  gap: var(--content-gap);
+}
+
 .story-content p {
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .about-grid,
@@ -212,7 +219,7 @@ nav {
 .gallery-grid {
   display: grid;
   gap: 1.2rem;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .about-grid,
@@ -266,8 +273,17 @@ nav {
 .home-menu-preview,
 .about,
 .menu {
-  padding: clamp(3rem, 8vw, 5rem) 5%;
+  padding: clamp(3.75rem, 8.5vw, 6rem) 5%;
   background: var(--background);
+}
+
+section + section {
+  margin-top: var(--section-gap);
+}
+
+.page-header + .gallery,
+.page-header + .contact {
+  margin-top: 0;
 }
 
 .page-header {
@@ -293,7 +309,7 @@ nav {
 .gallery-item {
   aspect-ratio: 1;
   border-radius: var(--radius-md);
-  background: linear-gradient(145deg, var(--primary), var(--accent-brown));
+  background: linear-gradient(145deg, var(--primary), var(--accent-green));
   border: 0;
   display: flex;
   align-items: center;
@@ -316,6 +332,11 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+}
+
+.contact-info {
+  display: grid;
+  gap: 1rem;
 }
 
 .form-group {
@@ -360,12 +381,12 @@ nav {
   display: inline-block;
   font-family: 'Playpen Sans', cursive;
   cursor: pointer;
-  border: 2px solid var(--primary);
+  /* border: 2px solid var(--primary); */
 }
 
 .cta-button,
 .submit-button {
-  background: linear-gradient(145deg, var(--primary), var(--accent-brown));
+  background: var(--accent-brown);
   color: var(--background);
 }
 
@@ -373,6 +394,10 @@ nav {
   padding: 0.9rem 2rem;
   font-size: 1.03rem;
   margin-top: 1rem;
+}
+
+.our-story .cta-button {
+  margin-top: 1.35rem;
 }
 
 .submit-button {
@@ -398,7 +423,7 @@ nav {
   height: 40px;
   border-radius: 50%;
   text-decoration: none;
-  background: linear-gradient(145deg, var(--accent-brown), var(--primary));
+  background: var(--accent-brown);
   color: var(--background);
   border: 0;
   display: flex;
@@ -408,10 +433,10 @@ nav {
 }
 
 footer {
-  background: linear-gradient(180deg, var(--primary), var(--accent-brown));
+  background:var(--primary);
   color: var(--background);
   text-align: center;
-  padding: 2.2rem 5%;
+  padding: 1.5rem 5%;
 }
 
 .footer-content {
@@ -420,15 +445,15 @@ footer {
 }
 
 .footer-text-logo {
-  width: min(280px, 72vw);
+  width: min(190px, 72vw);
   height: auto;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
   display: block;
 }
 
 .footer-bottom {
-  margin-top: 0.8rem;
-  padding-top: 0.8rem;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
   border-top: 0;
   font-weight: 400;
 }
@@ -439,6 +464,7 @@ footer {
   pointer-events: none;
   animation: doodleFloat 4.8s ease-in-out infinite;
   transform: translateY(0);
+  z-index: 1;
 }
 
 .doodle img {
@@ -457,7 +483,7 @@ footer {
 .doodle-3 { top: 66%; left: 38%; width: 56px; height: 56px; animation-delay: 1.2s; }
 .doodle-4 { top: 66%; left: 52%; width: 60px; height: 60px; animation-delay: 1.8s; }
 .doodle-5 { top: 66%; left: 66%; width: 54px; height: 54px; animation-delay: 2.4s; }
-.doodle-6 { top: 66%; left: 80%; width: 58px; height: 58px; animation-delay: 3s; }
+.doodle-7 { top: 66%; left: 86%; width: 54px; height: 54px; animation-delay: 2.4s; }
 
 .float-object {
   will-change: transform;
@@ -522,7 +548,16 @@ footer {
   /* background: linear-gradient(180deg, var(--background), var(--accent-green)); */
 
     min-height: auto;
-    padding-bottom: 74px;
+    padding-bottom: 104px;
+  }
+
+  section + section {
+    margin-top: 1.25rem;
+  }
+
+  .page-header + .gallery,
+  .page-header + .contact {
+    margin-top: 0;
   }
 
   .hero-content {
@@ -548,6 +583,9 @@ footer {
   .doodle {
     width: 44px !important;
     height: 44px !important;
+    top: auto !important;
+    bottom: 18px;
+    opacity: 0.95;
   }
 
   .doodle-3,
@@ -555,10 +593,10 @@ footer {
     display: none;
   }
 
-  .doodle-1 { top: 72%; left: 8%; }
-  .doodle-2 { top: 72%; left: 28%; }
-  .doodle-4 { top: 72%; left: 48%; }
-  .doodle-5 { top: 72%; left: 68%; }
+  .doodle-1 { left: 8%; }
+  .doodle-2 { left: 28%; }
+  .doodle-4 { left: 48%; }
+  .doodle-5 { left: 68%; }
 
   .page-header {
     padding: 98px 5% 46px;
