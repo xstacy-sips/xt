@@ -63,7 +63,7 @@ nav {
   align-items: center;
   background: var(--background);
   border-bottom: 0;
-  background: linear-gradient(180deg, var(--background), var(--accent-green));
+  background: var(--background);
 }
 
 .logo-container {
@@ -129,9 +129,22 @@ nav {
   height: 3px;
   background: var(--primary);
 }
+  /* background: linear-gradient(180deg, var(--background), var(--accent-green)); */
 
-.hero,
+.hero{
+  background:var(--background);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 110px 5% 70px;
+  background: var(--background);
+  overflow: hidden;
+}
+
 .hero2 {
+  background: var(--background);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -506,8 +519,9 @@ footer {
 
   .hero,
   .hero2 {
+  /* background: linear-gradient(180deg, var(--background), var(--accent-green)); */
+
     min-height: auto;
-    padding-top: 96px;
     padding-bottom: 74px;
   }
 

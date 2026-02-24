@@ -51,7 +51,7 @@ nav {
   z-index: 1000;
   background: var(--background);
   border-bottom: 0;
-  background: linear-gradient(180deg, var(--background), var(--accent-green));
+  background: var(--background);
 }
 
 .center-nav {
