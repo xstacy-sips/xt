@@ -270,8 +270,8 @@ nav {
 .menu-badges {
   display: flex;
   gap: 0.25rem;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  flex-wrap: wrap;
+  overflow: visible;
 }
 
 .badge {
