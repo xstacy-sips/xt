@@ -59,7 +59,7 @@ const menuData = {
     items: [
       {
         name: 'Purple Haze',
-        description: 'Lavender & Berries | Floral & Fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Relaxation',
+        description: 'Lavender & Berries | Floral & Fruity \nSweetness: ⬤⬤〇〇〇\nBest for: Relaxation',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic', 'Bestseller'],
@@ -67,7 +67,7 @@ const menuData = {
       },
       {
         name: 'Blockbuster',
-        description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Adventure seekers',
+        description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤〇〇 \nBest for: Adventure seekers',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try','xstatic'],
@@ -76,7 +76,7 @@ const menuData = {
       },
       {
         name: 'Palom',
-        description: 'Coffee, Ginger & Cranberry | Energizing & Bold \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Coffee lovers | Energy Boost',
+        description: 'Coffee, Ginger & Cranberry | Energizing & Bold \nSweetness: ⬤⬤⬤〇〇\nBest for: Coffee lovers | Energy Boost',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try', 'Unique'],
@@ -84,7 +84,7 @@ const menuData = {
       },
       {
         name: 'After Lunch',
-        description: 'Fennel, Lime, Cumin | Cooling & Soothing\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Digestion | After heavy meals',
+        description: 'Fennel, Lime, Cumin | Cooling & Soothing\nSweetness: ⬤⬤〇〇〇\nBest for: Digestion | After heavy meals',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -92,7 +92,7 @@ const menuData = {
       },
       {
         name: 'Sparkling Sea',
-        description: 'Kiwi, Mint & Lemon | Icy Minty Burst \nTangy Sweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Refreshment',
+        description: 'Kiwi, Mint & Lemon | Icy Minty Burst \nTangy Sweetness: ⬤⬤⬤〇〇\nBest for: Refreshment',
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller'],
@@ -100,7 +100,7 @@ const menuData = {
       },
       {
         name: 'Starlight',
-        description: 'Litchi, Mint & Lemon | Icy Minty Burst \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Refreshment',
+        description: 'Litchi, Mint & Lemon | Icy Minty Burst \nSweetness: ⬤⬤⬤⬤〇\nBest for: Refreshment',
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller','xstatic'],
@@ -108,7 +108,7 @@ const menuData = {
       },
       {
         name: 'Rio',
-        description: 'Guava, Chilly & Mint | spicy-cool contrast \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Spice lovers',
+        description: 'Guava, Chilly & Mint | spicy-cool contrast \nSweetness: ⬤⬤⬤〇〇 \nBest for: Spice lovers',
         priceSmall: '89',
         price: '99',
         badges: ['Must Try', 'xstatic'],
@@ -116,14 +116,14 @@ const menuData = {
       },
       {
         name: 'Margarita',
-        description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Shikanji Lovers',
+        description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤〇〇 \nBest for: Shikanji Lovers',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
         outOfStock: false},
       {
         name: 'Cinderella',
-        description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Shikanji Lovers',
+        description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤⬤ \nBest for: Shikanji Lovers',
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller','xstatic'],
@@ -131,7 +131,7 @@ const menuData = {
       },
       {
         name: 'Pinacolada',
-        description: 'Pineapple & Coconut | Fizzy Beach Escape \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Vacation feels',
+        description: 'Pineapple & Coconut | Fizzy Beach Escape \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Vacation feels',
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller','xstatic'],
@@ -139,7 +139,7 @@ const menuData = {
       },
       {
         name: 'GrassHopper',
-        description: 'Green Apple & Ginger | Jungle Adventure \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Tangy lovers',
+        description: 'Green Apple & Ginger | Jungle Adventure \nSweetness: ⬤⬤〇〇〇 \nBest for: Tangy lovers',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -147,7 +147,7 @@ const menuData = {
       },
       {
         name: 'Water Baloon',
-        description: 'Watermelon, Orange, Mint | Summer Vibes\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: kid-at-heart',
+        description: 'Watermelon, Orange, Mint | Summer Vibes\nSweetness: ⬤⬤⬤〇〇 \nBest for: kid-at-heart',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -155,7 +155,7 @@ const menuData = {
       },
       {
         name: 'Lotus',
-        description: 'Litchi & Rose | Elegant & Romantic \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Minimalists & romantics',
+        description: 'Litchi & Rose | Elegant & Romantic \nSweetness: ⬤⬤⬤⬤⬤\nBest for: Minimalists & romantics',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -163,7 +163,7 @@ const menuData = {
       },
       {
         name: 'Forest',
-        description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Detox vibes',
+        description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤〇〇\nBest for: Detox vibes',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -171,7 +171,7 @@ const menuData = {
       },
       {
         name: 'Ice Tea',
-        description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai Lovers',
+        description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤〇〇 \nBest for: Chai Lovers',
         priceSmall: '69',
         price: '79',
         badges: ['xstatic'],
@@ -179,7 +179,7 @@ const menuData = {
       },
       {
         name: 'Sunshine',
-        description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai Lovers',
+        description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤〇〇 \nBest for: Chai Lovers',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -187,7 +187,7 @@ const menuData = {
       },
       {
         name: 'Martini',
-        description: 'Ginger & Lemon | Sophisticated & Clean \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai lovers who want fizz',
+        description: 'Ginger & Lemon | Sophisticated & Clean \nSweetness: ⬤〇〇〇〇 \nBest for: Chai lovers who want fizz',
         priceSmall: '89',
         price: '99',
         badges: ['xstatic'],
@@ -195,7 +195,7 @@ const menuData = {
       },
       {
         name: 'Virgin Mojito',
-        description: 'lemon & Mint. | Tangy and Sweet\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Nimbu Pani Enthusiastic',
+        description: 'lemon & Mint. | Tangy and Sweet\nSweetness: ⬤⬤⬤〇〇 \nBest for: Nimbu Pani Enthusiastic',
         priceSmall: '59',
         price: '79',
         badges: ['xstatic'],
@@ -203,7 +203,7 @@ const menuData = {
       },
       {
         name: 'Iced Americano',
-        description: 'Black Coffee on the rocks ',
+        description: 'Black Coffee on the rocks \nSweetness: 〇〇〇〇〇' ,
         priceSmall: '119',
         price: '139',
         badges: ['xstatic'],
@@ -211,13 +211,13 @@ const menuData = {
       },
       {
         name: 'Sparkling Strawberries',
-        description: 'Crushed Strawberries in sparkling water',
+        description: 'Crushed Strawberries in sparkling water \nSweetness: ⬤⬤⬤⬤⬤',
         priceSmall: '89',
         price: '99'
       },
       {
         name: 'Sparkling Blueberries',
-        description: 'Crushed Blueberries in sparkling water',
+        description: 'Crushed Blueberries in sparkling water \nSweetness: ⬤⬤〇〇〇',
         priceSmall: '89',
         price: '99'
       }
@@ -230,7 +230,7 @@ const menuData = {
     items: [
       {
         name: 'Chocolate Protein',
-        description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
+        description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
         priceSmall: '115',
         price: '129',
         badges: ['Healthy'],
@@ -238,7 +238,7 @@ const menuData = {
       },
       {
         name: 'Almond Spice',
-        description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Calorie Conscious',
+        description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤〇〇〇〇 \nBest for: Calorie Conscious',
         priceSmall: '115',
         price: '129',
         badges: ['Healthy'],
@@ -246,7 +246,7 @@ const menuData = {
       },
       {
         name: 'Liquid Diet',
-        description: 'Multi-grain nut powerhouse meal in a glass | Filling & nutritious \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Weight Gainer',
+        description: 'Multi-grain nut powerhouse meal in a glass | Filling & nutritious \nSweetness: ⬤⬤〇〇〇 \nBest for: Weight Gainer',
         priceSmall: '115',
         price: '129',
         badges: ['Healthy'],
@@ -254,7 +254,7 @@ const menuData = {
       },
       {
         name: 'Pailwan',
-        description: 'Traditional energy drink with extra strength | Creamy indulgence \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Festive vibes & Strength',
+        description: 'Traditional energy drink with extra strength | Creamy indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Festive vibes & Strength',
         priceSmall: '115',
         price: '129',
         badges: ['Healthy'],
@@ -262,7 +262,7 @@ const menuData = {
       },
       {
         name: 'Redvelvet',
-        description: 'Strawberries & Red Velvet Essence | Decadent & dreamy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Dessert lovers',
+        description: 'Strawberries & Red Velvet Essence | Decadent & dreamy \nSweetness: ⬤⬤⬤〇〇 \nBest for: Dessert lovers',
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller','xstatic'],
@@ -270,7 +270,7 @@ const menuData = {
       },
       {
         name: 'Blueberry Cheese',
-        description: 'Blueberries & Cheesecake | Rich & tangy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Cheesecake fans',
+        description: 'Blueberries & Cheesecake | Rich & tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Cheesecake fans',
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller','xstatic'],
@@ -278,7 +278,7 @@ const menuData = {
       },
       {
         name: 'MangoVelvet',
-        description: 'Mangoes & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Mango season lovers',
+        description: 'Mangoes & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Mango season lovers',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try','xstatic'],
@@ -286,7 +286,7 @@ const menuData = {
       },
       {
         name: 'Specialty Iced latte',
-        description: 'Freshly brewed specialty Arabica beans | Smooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
+        description: 'Freshly brewed specialty Arabica beans | Smooth & strong \nBitterness: ⬤⬤〇〇〇 \nBest for: Coffee purists',
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller','xstatic'],
@@ -294,7 +294,7 @@ const menuData = {
       },
       {
         name: 'Creamy crust',
-        description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Custard apple lovers',
+        description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤〇〇 \nBest for: Custard apple lovers',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -302,7 +302,7 @@ const menuData = {
       },
       {
         name: 'Berry Pop',
-        description: 'Mixed Berries & popcorn | Fun & fruity\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Playful taste adventurers',
+        description: 'Mixed Berries & popcorn | Fun & fruity\nSweetness: ⬤⬤⬤⬤〇 \nBest for: Playful taste adventurers',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try','xstatic'],
@@ -310,7 +310,7 @@ const menuData = {
       },
       {
         name: 'Black Pink',
-        description: 'Straw Berries & Chocolate | Bold & beautiful \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate-berry combo fans',
+        description: 'Straw Berries & Chocolate | Bold & beautiful \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Chocolate-berry combo fans',
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller', 'xstatic'],
@@ -318,7 +318,7 @@ const menuData = {
       },
       {
         name: 'Ice Spice',
-        description: 'Real milk spices with subtle sweetness | Warming & comforting \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Traditional spice lovers',
+        description: 'Real milk spices with subtle sweetness | Warming & comforting \nSweetness: ⬤⬤〇〇〇 \nBest for: Traditional spice lovers',
         priceSmall: '115',
         price: '129',
         badges: ['Must Try','xstatic'],
@@ -326,7 +326,7 @@ const menuData = {
       },
       {
         name: 'Midnight Moca',
-        description: 'Coffee, Blueberry & Chocolatey | Rich & mysterious \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee lovers wanting fruity twist',
+        description: 'Coffee, Blueberry & Chocolatey | Rich & mysterious \nSweetness: ⬤⬤⬤〇〇 \nBest for: Coffee lovers wanting fruity twist',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -334,7 +334,7 @@ const menuData = {
       },
       {
         name: 'FuK Matcha',
-        description: 'Moringa & Milk  |  Bold & Sweet\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Matcha Lovers & Haters\nFlavor options :  Chocolate  Coffee  Vanilla  Caramel  Hazelnut',
+        description: 'Moringa & Milk  |  Bold & Sweet\nSweetness: ⬤⬤〇〇〇\nBest for: Matcha Lovers & Haters\nFlavor options :  Chocolate  Coffee  Vanilla  Caramel  Hazelnut',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -342,7 +342,7 @@ const menuData = {
       },
       {
         name: 'Pink Candy',
-        description: 'Litchi with Berries | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Sweet tooths',
+        description: 'Litchi with Berries | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Sweet tooths',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -350,7 +350,7 @@ const menuData = {
       },
       {
         name: 'BubbleGum',
-        description: 'Nostalgic Boomer Flavor | Sweet & playful \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Boomer Lover',
+        description: 'Nostalgic Boomer Flavor | Sweet & playful \nSweetness: ⬤⬤⬤⬤〇\nBest for: Boomer Lover',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -358,7 +358,7 @@ const menuData = {
       },
       {
         name: 'Mudpie',
-        description: 'mud of Chocolate heaven | Thick & indulgent \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate lovers',
+        description: 'mud of Chocolate heaven | Thick & indulgent \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Chocolate lovers',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -366,7 +366,7 @@ const menuData = {
       },
       {
         name: 'Coffee velvet',
-        description: 'Velvety Coffee with sweetness Smooth & silk \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Classic coffee shake fans\nFlavor options: Vanilla   Caramel   Hazelnut',
+        description: 'Velvety Coffee with sweetness Smooth & silk \nSweetness: ⬤⬤⬤〇〇 \nBest for: Classic coffee shake fans\nFlavor options: Vanilla   Caramel   Hazelnut',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -374,7 +374,7 @@ const menuData = {
       },
       {
         name: 'Biscoff',
-        description: 'Crushed Lotus Biscoff  | Cookie Haven\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Cookie lovers & indulgers\nFlavor options : Chocolate Coffee Vanilla Caramel Hazelnut',
+        description: 'Crushed Lotus Biscoff  | Cookie Haven\nSweetness: ⬤⬤⬤⬤〇\nBest for: Cookie lovers & indulgers\nFlavor options : Chocolate Coffee Vanilla Caramel Hazelnut',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -382,7 +382,7 @@ const menuData = {
       },
       {
         name: 'Stardust',
-        description: 'Smooth milky vanilla | Simple & timeless \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Minimalist',
+        description: 'Smooth milky vanilla | Simple & timeless \nSweetness: ⬤⬤⬤〇〇 \nBest for: Minimalist',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -390,7 +390,7 @@ const menuData = {
       },
       {
         name: 'Milky Strawberries',
-        description: 'Pure strawberry goodness | Sweet & fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Strawberry milk fans',
+        description: 'Pure strawberry goodness | Sweet & fruity \nSweetness: ⬤⬤⬤〇〇 \nBest for: Strawberry milk fans',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -398,7 +398,7 @@ const menuData = {
       },
       {
         name: 'MIlky Blueberries',
-        description: 'Pure Blueberries goodness | Tangy & fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Blueberries milk fans',
+        description: 'Pure Blueberries goodness | Tangy & fruity \nSweetness: ⬤⬤⬤〇〇 \nBest for: Blueberries milk fans',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -406,7 +406,7 @@ const menuData = {
       },
       {
         name: 'Moca',
-        description: 'Chocolate & Coffee | Creamy & delicious \nSweetness: ●●●●○ \nBest for: Classic combo lovers',
+        description: 'Chocolate & Coffee | Creamy & delicious \nSweetness:  ⬤⬤〇〇〇 \nBest for: Classic combo lovers',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
@@ -414,7 +414,7 @@ const menuData = {
       },
       {
         name: 'Iced Cocoa',
-        description: 'Cocoa with milk | Dark & creamy\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Dark Chocolate Fans',
+        description: 'Cocoa with milk | Dark & creamy\nSweetness: ⬤〇〇〇〇 \nBest for: Dark Chocolate Fans',
         priceSmall: '115',
         price: '129',
         badges: ['xstatic'],
