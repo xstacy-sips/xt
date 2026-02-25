@@ -172,8 +172,8 @@ const menuData = {
       {
         name: 'Ice Tea',
         description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai Lovers',
-        priceSmall: '89',
-        price: '99',
+        priceSmall: '69',
+        price: '79',
         badges: ['Must Try'],
         outOfStock: false
       },
@@ -196,8 +196,8 @@ const menuData = {
       {
         name: 'Virgin Mojito',
         description: 'lemon & Mint. | Tangy and Sweet\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Nimbu Pani Enthusiastic',
-        priceSmall: '89',
-        price: '99',
+        priceSmall: '59',
+        price: '79',
         badges: ['Must Try'],
         outOfStock: false
       },
@@ -210,7 +210,13 @@ const menuData = {
         outOfStock: false
       },
       {
-        name: 'Blueberries',
+        name: 'Sparkling Strawberries',
+        description: 'Crushed Strawberries in sparkling water',
+        priceSmall: '89',
+        price: '99'
+      },
+      {
+        name: 'Sparkling Blueberries',
         description: 'Crushed Blueberries in sparkling water',
         priceSmall: '89',
         price: '99'
