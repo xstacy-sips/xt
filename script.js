@@ -70,117 +70,150 @@ const menuData = {
         description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Adventure seekers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+
       },
       {
         name: 'Palom',
         description: 'Coffee, Ginger & Cranberry | Energizing & Bold \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Coffee lovers | Energy Boost',
         priceSmall: '115',
         price: '129',
-        badges: ['Bestseller']
+        badges: ['Bestseller'],
+        outOfStock: false
       },
       {
         name: 'After Lunch',
         description: 'Fennel, Lime, Cumin | Cooling & Soothing\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Digestion | After heavy meals',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Sparkling Sea',
         description: 'Kiwi, Mint & Lemon | Icy Minty Burst \nTangy Sweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Refreshment',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Starlight',
         description: 'Litchi, Mint & Lemon | Icy Minty Burst \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Refreshment',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Rio',
         description: 'Guava, Chilly & Mint | spicy-cool contrast \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Spice lovers',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Margarita',
         description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Shikanji Lovers',
         priceSmall: '89',
-        price: '99'
-      },
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false},
       {
         name: 'Cinderella',
         description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Shikanji Lovers',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Pinacolada',
         description: 'Pineapple & Coconut | Fizzy Beach Escape \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Vacation feels',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'GrassHopper',
         description: 'Green Apple & Ginger | Jungle Adventure \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Tangy lovers',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Water Baloon',
         description: 'Watermelon, Orange, Mint | Summer Vibes\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: kid-at-heart',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Lotus',
         description: 'Litchi & Rose | Elegant & Romantic \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Minimalists & romantics',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Forest',
         description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Detox vibes',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Ice Tea',
         description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai Lovers',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Sunshine',
         description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai Lovers',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Martini',
         description: 'Ginger & Lemon | Sophisticated & Clean \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai lovers who want fizz',
         priceSmall: '89',
-        price: '99'
-      },
-      {
-        name: 'Sparkling Strawberry',
-        description: 'Crushed Strawberries in sparkling water',
-        priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Virgin Mojito',
         description: 'lemon & Mint. | Tangy and Sweet\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Nimbu Pani Enthusiastic',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Iced Americano',
         description: 'Black Coffee on the rocks ',
         priceSmall: '119',
-        price: '139'
+        price: '139',
+        badges: ['Must Try'],
+        outOfStock: false
+      },
+      {
+        name: 'Blueberries',
+        description: 'Crushed Blueberries in sparkling water',
+        priceSmall: '89',
+        price: '99'
       }
     ]
   },
@@ -194,161 +227,192 @@ const menuData = {
         description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Bestseller', 'Must Try']
+        badges: ['Bestseller', 'Must Try'],
+        outOfStock: false
       },
       {
         name: 'Almond Spice',
         description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Calorie Conscious',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Liquid Diet',
         description: 'Multi-grain nut powerhouse meal in a glass | Filling & nutritious \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Weight Gainer',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Pailwan',
         description: 'Traditional energy drink with extra strength | Creamy indulgence \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Festive vibes & Strength',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Redvelvet',
         description: 'Strawberries & Red Velvet Essence | Decadent & dreamy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Dessert lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Blueberry Cheese',
         description: 'Blueberries & Cheesecake | Rich & tangy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Cheesecake fans',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'MangoVelvet',
         description: 'Mangoes & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Mango season lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
-        name: 'Specialty Coffee Velvet',
+        name: 'Specialty Iced latte',
         description: 'Freshly brewed specialty Arabica beans | Smooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Creamy crust',
         description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Custard apple lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Berry Pop',
         description: 'Mixed Berries & popcorn | Fun & fruity\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Playful taste adventurers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Black Pink',
         description: 'Straw Berries & Chocolate | Bold & beautiful \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate-berry combo fans',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Ice Spice',
         description: 'Real milk spices with subtle sweetness | Warming & comforting \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Traditional spice lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Midnight Moca',
         description: 'Coffee, Blueberry & Chocolatey | Rich & mysterious \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee lovers wanting fruity twist',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'FuK Matcha',
         description: 'Moringa & Milk  |  Bold & Sweet\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Matcha Lovers & Haters\nFlavor options :  Chocolate  Coffee  Vanilla  Caramel  Hazelnut',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Pink Candy',
         description: 'Litchi with Berries | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Sweet tooths',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'BubbleGum',
         description: 'Nostalgic Boomer Flavor | Sweet & playful \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Boomer Lover',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Mudpie',
         description: 'mud of Chocolate heaven | Thick & indulgent \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate lovers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Coffee velvet',
         description: 'Velvety Coffee with sweetness Smooth & silk \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Classic coffee shake fans\nFlavor options: Vanilla   Caramel   Hazelnut',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Biscoff',
         description: 'Crushed Lotus Biscoff  | Cookie Haven\nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Cookie lovers & indulgers\nFlavor options : Chocolate Coffee Vanilla Caramel Hazelnut',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Stardust',
         description: 'Smooth milky vanilla | Simple & timeless \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Minimalist',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Milky Strawberries',
         description: 'Pure strawberry goodness | Sweet & fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Strawberry milk fans',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'MIlky Blueberries',
         description: 'Pure Blueberries goodness | Tangy & fruity \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Blueberries milk fans',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+      },
+      {
+        name: 'Moca',
+        description: 'Chocolate & Coffee | Creamy & delicious \nSweetness: ●●●●○ \nBest for: Classic combo lovers',
+        priceSmall: '115',
+        price: '129',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Iced Cocoa',
         description: 'Cocoa with milk | Dark & creamy\nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Dark Chocolate Fans',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       }
     ]
   },
@@ -361,21 +425,24 @@ const menuData = {
         description: 'Kawa, Spices & Nuts Same emotion, different color\nUnique & aromatic \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai lovers',
         priceSmall: '99',
         price: '109',
-        badges: ['Bestseller', 'Must Try']
+        badges: ['Bestseller', 'Must Try'],
+        outOfStock: false
       },
       {
         name: 'Specialty Coffee',
         description: 'freshly brewed specialty Arabica beans\nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '69',
         price: '89',
-        badges: ['Bestseller']
+        badges: ['Bestseller'],
+        outOfStock: false
       },
       {
         name: 'Blueberry Mocha',
         description: 'Melted Chocolate with Berry surprise Delightful choco-berry warmth\nFun & indulgent Sweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Hot chocolate with a twist',
         priceSmall: '69',
         price: '89',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Hot Chocolate',
@@ -387,38 +454,50 @@ const menuData = {
         name: 'Wildroot',
         description: 'erbal heat with ginger kick Warm, \nspicy & unapologetically bold | Healing & energizing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Immunity boost & spice lovers',
         priceSmall: '69',
-        price: '89'
+        price: '89',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Masala Chai',
         description: 'Authentic Indian chai with spices Traditional tea perfection\nWarm & comforting \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Classic chai enthusiasts',
         priceSmall: '69',
-        price: '89'
+        price: '89',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Detox',
         description: 'Calming fennel (saunf) drink Soothing digestive night drink\nLight & refreshing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: After-dinner relaxation',
         priceSmall: '59',
-        price: '69'
+        price: '69',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Specialty Black Coffee',
         description: 'freshly brewed specialty Arabica beans \nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '59',
-        price: '69'
+        price: '69',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Instant Coffee',
         description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Roadside Coffee Lover',
         priceSmall: '49',
-        price: '59'
+        price: '59',
+        badges: ['Must Try'],
+        outOfStock: false
       },
       {
         name: 'Instant Black Coffee',
         description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Roadside Coffee Lover',
         priceSmall: '59',
         price: '69',
-        badges: ['Healthy']
+        badges: ['Healthy'],
+        outOfStock: false
+
       }
     ]
   },
@@ -428,27 +507,36 @@ const menuData = {
       {
         name: 'Frozen Cheescake',
         price: '159',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+
       },
       {
         name: 'Cookie (4pcs)',
         price: '159',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+
       },
       {
         name: 'Penut Butter Toast (2pcs)',
         price: '159',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+
       },
       {
         name: 'Popped Lotus Seeds',
         price: '159',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
+
       },
       {
         name: 'Nut Mix',
         price: '159',
-        badges: ['Must Try']
+        badges: ['Must Try'],
+        outOfStock: false
       }
     ]
   }
