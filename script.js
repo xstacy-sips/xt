@@ -450,7 +450,7 @@ const menuData = {
         description: 'Melted Chocolate with Berry surprise Delightful choco-berry warmth\nFun & indulgent Sweetness: ⬤⬤⬤〇〇 \nBest for: Hot chocolate with a twist',
         priceSmall: '99',
         price: '119',
-        badges: ['Chocolaty', 'Coffee','Fruity', 'Sweet','New'],
+        badges: ['Chocolaty', 'Tangy','Coffee','Fruity', 'Sweet','New'],
         outOfStock: false
       },
       {
@@ -525,7 +525,7 @@ const menuData = {
       {
         name: 'Cookie (4pcs)',
         price: '99',
-        badges: ['Sweet', 'Chocolaty'],
+        badges: ['Sweet'],
         outOfStock: false
 
       },
