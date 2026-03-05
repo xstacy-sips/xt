@@ -62,7 +62,7 @@ const menuData = {
         description: 'Lavender & Berries | Floral & Fruity \nSweetness: ⬤⬤〇〇〇\nBest for: Relaxation',
         priceSmall: '115',
         price: '129',
-        badges: ['xstatic', 'Bestseller'],
+        badges: ['Bestseller', 'Fruity', 'Less Sweet',  'Refreshing',],
         outOfStock: false
       },
       {
@@ -70,7 +70,7 @@ const menuData = {
         description: 'Popcorn & Cranberries | Bold & Theatrical \nSweetness: ⬤⬤⬤〇〇 \nBest for: Adventure seekers',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try','xstatic'],
+        badges: ['Must Try', 'Unique', 'Sweet'],
         outOfStock: false
 
       },
@@ -79,7 +79,7 @@ const menuData = {
         description: 'Coffee, Ginger & Cranberry | Energizing & Bold \nSweetness: ⬤⬤⬤〇〇\nBest for: Coffee lovers | Energy Boost',
         priceSmall: '115',
         price: '129',
-        badges: ['Must Try', 'Unique'],
+        badges: ['Must Try',  'Unique','Coffee', 'Tangy', 'New'],
         outOfStock: false
       },
       {
@@ -87,7 +87,7 @@ const menuData = {
         description: 'Fennel, Lime, Cumin | Cooling & Soothing\nSweetness: ⬤⬤〇〇〇\nBest for: Digestion | After heavy meals',
         priceSmall: '115',
         price: '129',
-        badges: ['xstatic'],
+        badges: ['Healthy',  'Unique','Refreshing', 'Tangy', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -95,7 +95,7 @@ const menuData = {
         description: 'Kiwi, Mint & Lemon | Icy Minty Burst \nTangy Sweetness: ⬤⬤⬤〇〇\nBest for: Refreshment',
         priceSmall: '89',
         price: '99',
-        badges: ['Bestseller'],
+        badges: ['Bestseller', 'Refreshing', 'Tangy', 'Fruity'],
         outOfStock: false
       },
       {
@@ -103,7 +103,7 @@ const menuData = {
         description: 'Litchi, Mint & Lemon | Icy Minty Burst \nSweetness: ⬤⬤⬤⬤〇\nBest for: Refreshment',
         priceSmall: '89',
         price: '99',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller', 'Refreshing', 'Fruity', 'Sweet'],
         outOfStock: false
       },
       {
@@ -111,7 +111,7 @@ const menuData = {
         description: 'Guava, Chilly & Mint | spicy-cool contrast \nSweetness: ⬤⬤⬤〇〇 \nBest for: Spice lovers',
         priceSmall: '89',
         price: '99',
-        badges: ['Must Try', 'xstatic'],
+        badges: ['Must Try', 'Spicy', 'Tangy'],
         outOfStock: false
       },
       {
@@ -119,14 +119,14 @@ const menuData = {
         description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤〇〇 \nBest for: Shikanji Lovers',
         priceSmall: '89',
         price: '99',
-        badges: ['xstatic'],
+        badges: ['Refreshing', 'Tangy', 'Less Sweet', 'New'],
         outOfStock: false},
       {
         name: 'Cinderella',
         description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤⬤ \nBest for: Shikanji Lovers',
         priceSmall: '89',
         price: '99',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller', 'Sweet', 'Fruity'],
         outOfStock: false
       },
       {
@@ -134,7 +134,7 @@ const menuData = {
         description: 'Pineapple & Coconut | Fizzy Beach Escape \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Vacation feels',
         priceSmall: '89',
         price: '99',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller',  'Refreshing','Sweet', 'Fruity'],
         outOfStock: false
       },
       {
@@ -142,7 +142,7 @@ const menuData = {
         description: 'Green Apple & Ginger | Jungle Adventure \nSweetness: ⬤⬤〇〇〇 \nBest for: Tangy lovers',
         priceSmall: '89',
         price: '99',
-        badges: ['xstatic'],
+        badges: ['Tangy', 'Refreshing', 'Less Sweet'],
         outOfStock: false
       },
       {
@@ -150,7 +150,7 @@ const menuData = {
         description: 'Watermelon, Orange, Mint | Summer Vibes\nSweetness: ⬤⬤⬤〇〇 \nBest for: kid-at-heart',
         priceSmall: '89',
         price: '99',
-        badges: ['xstatic'],
+        badges: ['Bestseller','Fruity', 'Refreshing', 'Sweet'],
         outOfStock: false
       },
       {
@@ -158,7 +158,7 @@ const menuData = {
         description: 'Litchi & Rose | Elegant & Romantic \nSweetness: ⬤⬤⬤⬤⬤\nBest for: Minimalists & romantics',
         priceSmall: '89',
         price: '79',
-        badges: ['xstatic'],
+        badges: ['Fruity', 'Sweet'],
         outOfStock: false
       },
       {
@@ -166,7 +166,7 @@ const menuData = {
         description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤〇〇\nBest for: Detox vibes',
         priceSmall: '79',
         price: '89',
-        badges: ['xstatic'],
+        badges: [ 'Refreshing', 'Tangy', 'Less Sweet', 'New'],
         outOfStock: false
       },
       
@@ -175,7 +175,7 @@ const menuData = {
         description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤〇〇 \nBest for: Chai Lovers',
         priceSmall: '79',
         price: '89',
-        badges: ['xstatic'],
+        badges: ['Tangy', 'Less Sweet'],
         outOfStock: false
       },
       {
@@ -183,7 +183,7 @@ const menuData = {
         description: 'Ginger & Lemon | Sophisticated & Clean \nSweetness: ⬤〇〇〇〇 \nBest for: Chai lovers who want fizz',
         priceSmall: '79',
         price: '89',
-        badges: ['xstatic'],
+        badges: ['Tangy', 'Less Sweet'],
         outOfStock: false
       },
       {
@@ -191,7 +191,7 @@ const menuData = {
         description: 'Lime & Tea | Tangy and Smooth\nSweetness: ⬤⬤⬤〇〇 \nBest for: Chai Lovers',
         priceSmall: '69',
         price: '79',
-        badges: ['xstatic'],
+        badges: ['Tangy', 'Refreshing', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -199,7 +199,7 @@ const menuData = {
         description: 'lemon & Mint. | Tangy and Sweet\nSweetness: ⬤⬤⬤〇〇 \nBest for: Nimbu Pani Enthusiastic',
         priceSmall: '59',
         price: '79',
-        badges: ['xstatic'],
+        badges: ['Tangy', 'Refreshing', 'Sweet'],
         outOfStock: false
       },
       {
@@ -207,20 +207,22 @@ const menuData = {
         description: 'Black Coffee on the rocks \nSweetness: 〇〇〇〇〇' ,
         priceSmall: '119',
         price: '139',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Coffee', , 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
         name: 'Sparkling Strawberries',
         description: 'Crushed Strawberries in sparkling water \nSweetness: ⬤⬤⬤⬤⬤',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Fruity', 'Sweet', 'Tangy', 'New']
       },
       {
         name: 'Sparkling Blueberries',
         description: 'Crushed Blueberries in sparkling water \nSweetness: ⬤⬤〇〇〇',
         priceSmall: '89',
-        price: '99'
+        price: '99',
+        badges: ['Fruity',  , 'Less Sweet', 'New']
       }
     ]
   },
@@ -234,7 +236,7 @@ const menuData = {
         description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
         priceSmall: '199',
         price: '299',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Chocolaty', 'New'],
         outOfStock: false
       },
       {
@@ -242,7 +244,7 @@ const menuData = {
         description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤〇〇〇〇 \nBest for: Calorie Conscious',
         priceSmall: '249',
         price: '349',
-        badges: ['Healthy'],
+        badges: ['Healthy',  'Unique','Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -250,7 +252,7 @@ const menuData = {
         description: 'Multi-grain nut powerhouse meal in a glass | Filling & nutritious \nSweetness: ⬤⬤〇〇〇 \nBest for: Weight Gainer',
         priceSmall: '149',
         price: '199',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -258,7 +260,7 @@ const menuData = {
         description: 'Traditional energy drink with extra strength | Creamy indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Festive vibes & Strength',
         priceSmall: '149',
         price: '199',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -266,7 +268,7 @@ const menuData = {
         description: 'Strawberries & Red Velvet Essence | Decadent & dreamy \nSweetness: ⬤⬤⬤〇〇 \nBest for: Dessert lovers',
         priceSmall: '135',
         price: '149',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller', 'Sweet', 'Fruity'],
         outOfStock: false
       },
       {
@@ -274,7 +276,7 @@ const menuData = {
         description: 'Blueberries & Cheesecake | Rich & tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Cheesecake fans',
         priceSmall: '135',
         price: '149',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller', 'Sweet', 'Tangy', 'Fruity'],
         outOfStock: false
       },
       {
@@ -282,7 +284,7 @@ const menuData = {
         description: 'Mangoes & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Mango season lovers',
         priceSmall: '135',
         price: '149',
-        badges: ['Must Try','xstatic'],
+        badges: ['Must Try', 'Sweet', 'Fruity', 'New'],
         outOfStock: false
       },
       {
@@ -290,7 +292,7 @@ const menuData = {
         description: 'Freshly brewed specialty Arabica beans | Smooth & strong \nBitterness: ⬤⬤〇〇〇 \nBest for: Coffee purists',
         priceSmall: '135',
         price: '149',
-        badges: ['Bestseller','xstatic'],
+        badges: ['Bestseller', 'Coffee', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -298,7 +300,7 @@ const menuData = {
         description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤〇〇 \nBest for: Custard apple lovers',
         priceSmall: '119',
         price: '139',
-        badges: ['xstatic'],
+        badges: ['Sweet', 'Fruity'],
         outOfStock: false
       },
       {
@@ -306,7 +308,7 @@ const menuData = {
         description: 'Mixed Berries & popcorn | Fun & fruity\nSweetness: ⬤⬤⬤⬤〇 \nBest for: Playful taste adventurers',
         priceSmall: '109',
         price: '129',
-        badges: ['Must Try','xstatic'],
+        badges: ['Must Try', 'Unique', 'Fruity', 'Sweet'],
         outOfStock: false
       },
       {
@@ -314,7 +316,7 @@ const menuData = {
         description: 'Straw Berries & Chocolate | Bold & beautiful \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Chocolate-berry combo fans',
         priceSmall: '109',
         price: '129',
-        badges: ['Bestseller', 'xstatic'],
+        badges: ['Bestseller', 'Chocolaty', 'Fruity', 'Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -322,7 +324,7 @@ const menuData = {
         description: 'Real milk spices with subtle sweetness | Warming & comforting \nSweetness: ⬤⬤〇〇〇 \nBest for: Traditional spice lovers',
         priceSmall: '99',
         price: '119',
-        badges: ['Must Try','xstatic'],
+        badges: ['Must Try', 'Healthy', 'Unique','Spicy', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -330,7 +332,7 @@ const menuData = {
         description: 'Coffee, Blueberry & Chocolatey | Rich & mysterious \nSweetness: ⬤⬤⬤〇〇 \nBest for: Coffee lovers wanting fruity twist',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Coffee', 'Chocolaty', 'Fruity', 'New'],
         outOfStock: false
       },
       {
@@ -338,7 +340,7 @@ const menuData = {
         description: 'Moringa & Milk  |  Bold & Sweet\nSweetness: ⬤⬤〇〇〇\nBest for: Matcha Lovers & Haters\nFlavor options :  Chocolate  Coffee  Vanilla  Caramel  Hazelnut',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Healthy', 'Unique', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -346,7 +348,7 @@ const menuData = {
         description: 'Litchi with Berries | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Sweet tooths',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Sweet', 'Fruity', 'Tangy', 'New'],
         outOfStock: false
       },
       {
@@ -354,7 +356,7 @@ const menuData = {
         description: 'Nostalgic Boomer Flavor | Sweet & playful \nSweetness: ⬤⬤⬤⬤〇\nBest for: Boomer Lover',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Sweet'],
         outOfStock: false
       },
       {
@@ -362,7 +364,7 @@ const menuData = {
         description: 'mud of Chocolate heaven | Thick & indulgent \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Chocolate lovers',
         priceSmall: '89',
         price: '99',
-        badges: ['xstatic'],
+        badges: ['Chocolaty', 'Sweet'],
         outOfStock: false
       },
       {
@@ -370,7 +372,7 @@ const menuData = {
         description: 'Velvety Coffee with sweetness Smooth & silk \nSweetness: ⬤⬤⬤〇〇 \nBest for: Classic coffee shake fans\nFlavor options: Vanilla   Caramel   Hazelnut',
         priceSmall: '79',
         price: '89',
-        badges: ['xstatic'],
+        badges: ['Bestseller','Coffee', 'Sweet'],
         outOfStock: false
       },
       {
@@ -378,7 +380,7 @@ const menuData = {
         description: 'Crushed Lotus Biscoff  | Cookie Haven\nSweetness: ⬤⬤⬤⬤〇\nBest for: Cookie lovers & indulgers\nFlavor options : Chocolate Coffee Vanilla Caramel Hazelnut',
         priceSmall: '149',
         price: '199',
-        badges: ['xstatic'],
+        badges: ['Sweet', 'Chocolaty', 'New'],
         outOfStock: false
       },
       {
@@ -386,7 +388,7 @@ const menuData = {
         description: 'Smooth milky vanilla | Simple & timeless \nSweetness: ⬤⬤⬤〇〇 \nBest for: Minimalist',
         priceSmall: '119',
         price: '139',
-        badges: ['xstatic'],
+        badges: ['Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -394,7 +396,7 @@ const menuData = {
         description: 'Pure strawberry goodness | Sweet & fruity \nSweetness: ⬤⬤⬤〇〇 \nBest for: Strawberry milk fans',
         priceSmall: '119',
         price: '139',
-        badges: ['xstatic'],
+        badges: ['Fruity', 'Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -402,7 +404,7 @@ const menuData = {
         description: 'Pure Blueberries goodness | Tangy & fruity \nSweetness: ⬤⬤⬤〇〇 \nBest for: Blueberries milk fans',
         priceSmall: '119',
         price: '139',
-        badges: ['xstatic'],
+        badges: ['Fruity', 'Tangy',  , 'New'],
         outOfStock: false
       },
       {
@@ -410,7 +412,7 @@ const menuData = {
         description: 'Chocolate & Coffee | Creamy & delicious \nSweetness:  ⬤⬤〇〇〇 \nBest for: Classic combo lovers',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Coffee', 'Chocolaty', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -418,7 +420,7 @@ const menuData = {
         description: 'Cocoa with milk | Dark & creamy\nSweetness: ⬤〇〇〇〇 \nBest for: Dark Chocolate Fans',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Chocolaty','Healthy', 'Less Sweet', 'New'],
         outOfStock: false
       }
     ]
@@ -432,7 +434,7 @@ const menuData = {
         description: 'Kawa, Spices & Nuts Same emotion, different color\nUnique & aromatic \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai lovers',
         priceSmall: '99',
         price: '119',
-        badges: ['Bestseller', 'xstatic'],
+        badges: ['Bestseller', 'Healthy','Unique','Spicy', 'Sweet'],
         outOfStock: false
       },
       {
@@ -440,7 +442,7 @@ const menuData = {
         description: 'freshly brewed specialty Arabica beans\nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '129',
         price: '149',
-        badges: ['Bestseller'],
+        badges: ['Bestseller', 'Coffee',  , 'Less Sweet'],
         outOfStock: false
       },
       {
@@ -448,7 +450,7 @@ const menuData = {
         description: 'Melted Chocolate with Berry surprise Delightful choco-berry warmth\nFun & indulgent Sweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Hot chocolate with a twist',
         priceSmall: '99',
         price: '119',
-        badges: ['xstatic'],
+        badges: ['Chocolaty', 'Coffee','Fruity', 'Sweet','New'],
         outOfStock: false
       },
       {
@@ -456,7 +458,7 @@ const menuData = {
         description: 'Melted Chocolate Milk Classic comfort in a cup \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate warmth seekers\nChoose: Vanilla/ Hazelnut/ Caramel ',
         priceSmall: '89',
         price: '109',
-        badges: ['Bestseller'],
+        badges: ['Bestseller', 'Chocolaty', 'Sweet'],
         outOfStock: false
       },
       {
@@ -464,7 +466,7 @@ const menuData = {
         description: 'erbal heat with ginger kick Warm, \nspicy & unapologetically bold | Healing & energizing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Immunity boost & spice lovers',
         priceSmall: '59',
         price: '79',
-        badges: ['Must Try','Healthy'],
+        badges: ['Must Try', 'Healthy', 'Spicy', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -472,7 +474,7 @@ const menuData = {
         description: 'Authentic Indian chai with spices Traditional tea perfection\nWarm & comforting \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Classic chai enthusiasts',
         priceSmall: '69',
         price: '89',
-        badges: ['xstatic'],
+        badges: ['Spicy', 'Healthy','Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -480,7 +482,7 @@ const menuData = {
         description: 'Calming fennel (saunf) drink Soothing digestive night drink\nLight & refreshing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: After-dinner relaxation',
         priceSmall: '59',
         price: '69',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Unique','Refreshing', 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -488,7 +490,7 @@ const menuData = {
         description: 'freshly brewed specialty Arabica beans \nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '119',
         price: '139',
-        badges: ['Healthy'],
+        badges: ['Healthy', 'Coffee',  , 'Less Sweet', 'New'],
         outOfStock: false
       },
       {
@@ -496,7 +498,7 @@ const menuData = {
         description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Roadside Coffee Lover',
         priceSmall: '59',
         price: '79',
-        badges: [''],
+        badges: ['Coffee', 'Sweet'],
         outOfStock: false
       },
       {
@@ -504,7 +506,7 @@ const menuData = {
         description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Roadside Coffee Lover',
         priceSmall: '59',
         price: '79',
-        badges: [''],
+        badges: ['Coffee',  , 'Less Sweet'],
         outOfStock: false
 
       }
@@ -516,35 +518,35 @@ const menuData = {
       {
         name: 'Frozen Cheescake',
         price: '189',
-        // badges: ['xstatic'],
+        badges: ['Sweet'],
         outOfStock: false
 
       },
       {
         name: 'Cookie (4pcs)',
         price: '99',
-        // badges: ['xstatic'],
+        badges: ['Sweet', 'Chocolaty'],
         outOfStock: false
 
       },
       {
         name: 'Penut Butter Toast (2pcs)',
-        price: '99',
-        // badges: ['xstatic'],
+        price: '70',
+        badges: ['Less Sweet'],
         outOfStock: false
 
       },
       {
         name: 'Popped Lotus Seeds',
         price: '159',
-        // badges: ['xstatic'],
+        badges: ['Healthy', 'Less Sweet'],
         outOfStock: false
 
       },
       {
         name: 'Nut Mix',
         price: '109',
-        // badges: ['xstatic'],
+        badges: ['Healthy', 'Less Sweet'],
         outOfStock: false
       }
     ]
@@ -555,12 +557,32 @@ const menuData = {
     const tagFilterRoot = document.getElementById('tag-filter-root');
 
     const categoryOrder = ['SparklingNectar', 'MilkyNectar', 'WarmNectar', 'Snacks'];
-    const tagPriority = ['Best Seller', 'xstatic', 'New', 'Refreshing', 'Sweet', 'Unique', 'Healthy'];
+    const TAG_BREAK = '__TAG_BREAK__';
+    const tagPriority = [
+      'Best Seller',
+      'Must Try',
+      'Unique ',
+      'New',
+      TAG_BREAK, //new line
+
+      'Coffee',
+      'Chocolaty',
+      'Fruity',
+      'Healthy',
+      TAG_BREAK, //new line
+
+      'Refreshing',
+      'Sweet',
+      'Less Sweet',
+      'Spicy',
+      'Tangy',
+    ];
+    const orderedPriorityTags = tagPriority.filter((tag) => tag !== TAG_BREAK);
     const selectedTags = new Set();
 
     const badgeSlug = (badge) => {
       const normalized = normalizeBadgeLabel(badge).toLowerCase();
-      if (normalized === 'xstatic') return 'musttry';
+      if (normalized === '') return 'musttry';
       if (normalized === 'best seller') return 'bestseller';
       return normalized.replace(/\s+/g, '-');
     };
@@ -568,58 +590,44 @@ const menuData = {
       const text = String(badge || '').trim();
       if (!text) return '';
       const normalized = text.toLowerCase();
-      if (normalized === 'xstatic' || normalized === 'must-try') return 'xstatic';
+      if (normalized === '' || normalized === 'must-try') return '';
       if (normalized === 'bestseller' || normalized === 'best seller' || normalized === 'best-seller') return 'Best Seller';
       if (normalized === 'new') return 'New';
       if (normalized === 'refreshing') return 'Refreshing';
       if (normalized === 'sweet') return 'Sweet';
+      if (normalized === 'less sweet' || normalized === 'less-sweet') return 'Less Sweet';
       if (normalized === 'unique') return 'Unique';
       if (normalized === 'healthy') return 'Healthy';
+      if (normalized === 'spicy') return 'Spicy';
+      if (normalized === 'tangy') return 'Tangy';
+      if (normalized === 'fruity') return 'Fruity';
+      if (normalized === 'chocolaty' || normalized === 'chocolatey') return 'Chocolaty';
+      if (normalized === 'coffee') return 'Coffee';
       return text
         .split(/\s+/)
         .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-        .join(' ');
+        .join( );
     };
-    const includesAny = (text, words) => words.some((word) => text.includes(word));
-
-    const getIngredientSource = (item) => {
-      const explicitIngredients = Array.isArray(item.ingredients)
-        ? item.ingredients.join(' ')
-        : (item.ingredients || '');
-      const primaryDescription = String(item.description || '')
-        .split('\n')[0]
-        .split('|')[0];
-      return `${explicitIngredients} ${primaryDescription}`.toLowerCase();
-    };
-
-    const inferBadges = (item) => {
+    const getManualBadges = (item) => {
       const result = [];
       const add = (label) => {
         if (!result.includes(label)) result.push(label);
       };
-      const ingredientText = getIngredientSource(item);
 
       (item.badges || []).forEach((badge) => {
         const label = normalizeBadgeLabel(badge);
         if (label) add(label);
       });
-
-      if (includesAny(ingredientText, ['mint', 'lemon', 'lime', 'cucumber', 'watermelon', 'kiwi', 'orange', 'fennel'])) add('Refreshing');
-      if (includesAny(ingredientText, ['chocolate', 'caramel', 'vanilla', 'strawberry', 'berries', 'berry', 'mango', 'litchi', 'rose', 'cookie', 'biscoff', 'custard', 'pineapple'])) add('Sweet');
-      if (includesAny(ingredientText, ['lavender', 'popcorn', 'fennel', 'cumin', 'moringa', 'ginger', 'spices'])) add('Unique');
-      if (includesAny(ingredientText, ['protein', 'coffee', 'arabica', 'cocoa'])) add('xstatic');
-      if (includesAny(ingredientText, ['protein', 'almond', 'moringa', 'fennel', 'nuts', 'nut', 'multigrain', 'detox', 'ginger'])) add('Healthy');
-
-      const prioritized = tagPriority.filter((label) => result.includes(label));
-      const extras = result.filter((label) => !tagPriority.includes(label));
+      const prioritized = orderedPriorityTags.filter((label) => result.includes(label));
+      const extras = result.filter((label) => !orderedPriorityTags.includes(label));
       return [...prioritized, ...extras];
     };
 
     const createMenuItem = (item) => {
       const card = document.createElement('article');
       card.className = `menu-item ${item.outOfStock ? 'out-of-stock' : ''}`;
-      const autoBadges = inferBadges(item);
-      card.dataset.tags = autoBadges.map((badge) => badgeSlug(badge)).join(' ');
+      const manualBadges = getManualBadges(item);
+      card.dataset.tags = manualBadges.map((badge) => badgeSlug(badge)).join( );
 
       const imageSrc = item.name
         ? `./assets/images/Doddel Drinks/${encodeURIComponent(item.name)}.jpg`
@@ -629,7 +637,7 @@ const menuData = {
         const media = document.createElement('div');
         media.className = 'menu-item-media';
 
-        if (autoBadges.length || item.outOfStock) {
+        if (manualBadges.length || item.outOfStock) {
           card.classList.add('has-badges');
 
           const header = document.createElement('div');
@@ -645,7 +653,7 @@ const menuData = {
             badges.appendChild(out);
           }
 
-          autoBadges.forEach((badge) => {
+          manualBadges.forEach((badge) => {
             const tag = document.createElement('span');
             tag.className = `badge badge-${badgeSlug(badge)}`;
             tag.innerHTML = `<span class="badge-text">${badge}</span>`;
@@ -714,42 +722,15 @@ const menuData = {
         const category = menuData[key];
         if (!category) return;
         (category.items || []).forEach((item) => {
-          inferBadges(item).forEach((badge) => used.add(badge));
+          getManualBadges(item).forEach((badge) => used.add(badge));
         });
       });
-      const prioritized = tagPriority.filter((tag) => used.has(tag));
+      const prioritized = orderedPriorityTags.filter((tag) => used.has(tag));
       const extras = Array.from(used)
-        .filter((tag) => !tagPriority.includes(tag))
+        .filter((tag) => !orderedPriorityTags.includes(tag))
         .sort((a, b) => a.localeCompare(b));
       return [...prioritized, ...extras];
     };
-
-    // const applyTagFilters = () => {
-    //   const activeTags = Array.from(selectedTags);
-    //   const hasActive = activeTags.length > 0;
-
-    //   document.querySelectorAll('.menu-item').forEach((card) => {
-    //     const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
-    //     // const matches = !hasActive || itemTags.some((tag) => selectedTags.has(tag));
-    //     const matches = !hasActive || Array.from(selectedTags).every((tag) => itemTags.includes(tag));
-    //     card.style.display = matches ? '' : 'none';
-    //   });
-
-    //   document.querySelectorAll('.menu-category').forEach((section) => {
-    //     const items = section.querySelectorAll('.menu-item');
-    //     const hasVisible = Array.from(items).some((item) => item.style.display !== 'none');
-    //     section.style.display = hasVisible ? '' : 'none';
-
-    //     if (hasActive && hasVisible) {
-    //       const toggle = section.querySelector('.category-toggle');
-    //       const content = section.querySelector('.category-content');
-    //       const chevron = section.querySelector('.category-chevron');
-    //       content.classList.add('open');
-    //       chevron.classList.add('open');
-    //       toggle.setAttribute('aria-expanded', 'true');
-    //     }
-    //   });
-    // };
 
     const applyTagFilters = () => {
   const activeTags = Array.from(selectedTags);
@@ -772,7 +753,7 @@ const menuData = {
     const scored = [];
 
     cards.forEach(card => {
-      const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
+      const itemTags = (card.dataset.tags || '').split( ).filter(Boolean);
 
       // Count how many selected tags match
       const matchCount = activeTags.filter(tag => itemTags.includes(tag)).length;
@@ -810,7 +791,11 @@ const menuData = {
 
 
     const renderTagFilters = () => {
-      const tags = getAllUsedTags();
+      const usedTags = getAllUsedTags();
+      const tags = [
+        ...tagPriority,
+        ...usedTags.filter((tag) => tag && !orderedPriorityTags.includes(tag))
+      ];
       if (!tags.length) return;
 
       const wrap = document.createElement('div');
@@ -825,6 +810,7 @@ const menuData = {
       list.className = 'tag-filter-list';
 
       const chips = [];
+      const seenTagSlugs = new Set();
       const makeChip = (text, slug, isAll = false) => {
         const chip = document.createElement('button');
         chip.type = 'button';
@@ -836,7 +822,21 @@ const menuData = {
       };
 
       makeChip('All', 'all', true);
-      tags.forEach((tag) => makeChip(tag, badgeSlug(tag)));
+      tags.forEach((tag) => {
+        if (tag === TAG_BREAK) {
+          const br = document.createElement('span');
+          br.className = 'tag-filter-break';
+          br.style.flexBasis = '100%';
+          br.style.height = '0';
+          br.setAttribute('aria-hidden', 'true');
+          list.appendChild(br);
+          return;
+        }
+        const slug = badgeSlug(tag);
+        if (seenTagSlugs.has(slug)) return;
+        seenTagSlugs.add(slug);
+        makeChip(tag, slug);
+      });
 
       const syncChipState = () => {
         chips.forEach((chip) => {
