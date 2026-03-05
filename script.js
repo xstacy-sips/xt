@@ -431,7 +431,7 @@ const menuData = {
     items: [
       {
         name: 'Pink Chai',
-        description: 'Kawa, Spices & Nuts Same emotion, different color\nUnique & aromatic \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chai lovers',
+        description: 'Kawa, Spices & Nuts Same emotion, different color\nUnique & aromatic \nSweetness: ⬤⬤⬤〇〇 \nBest for: Chai lovers',
         priceSmall: '99',
         price: '119',
         badges: ['Bestseller', 'Healthy','Unique','Spicy', 'Sweet'],
@@ -439,7 +439,7 @@ const menuData = {
       },
       {
         name: 'Specialty Coffee',
-        description: 'freshly brewed specialty Arabica beans\nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
+        description: 'freshly brewed specialty Arabica beans\nSmooth & strong \nBitterness: ⬤⬤〇〇〇 \nBest for: Coffee purists',
         priceSmall: '129',
         price: '149',
         badges: ['Bestseller', 'Coffee',  , 'Less Sweet'],
@@ -447,7 +447,7 @@ const menuData = {
       },
       {
         name: 'Blueberry Mocha',
-        description: 'Melted Chocolate with Berry surprise Delightful choco-berry warmth\nFun & indulgent Sweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Hot chocolate with a twist',
+        description: 'Melted Chocolate with Berry surprise Delightful choco-berry warmth\nFun & indulgent Sweetness: ⬤⬤⬤〇〇 \nBest for: Hot chocolate with a twist',
         priceSmall: '99',
         price: '119',
         badges: ['Chocolaty', 'Coffee','Fruity', 'Sweet','New'],
@@ -455,7 +455,7 @@ const menuData = {
       },
       {
         name: 'Hot Chocolate',
-        description: 'Melted Chocolate Milk Classic comfort in a cup \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Chocolate warmth seekers\nChoose: Vanilla/ Hazelnut/ Caramel ',
+        description: 'Melted Chocolate Milk Classic comfort in a cup \nSweetness: ⬤⬤⬤〇〇 \nBest for: Chocolate warmth seekers\nChoose: Vanilla/ Hazelnut/ Caramel ',
         priceSmall: '89',
         price: '109',
         badges: ['Bestseller', 'Chocolaty', 'Sweet'],
@@ -463,7 +463,7 @@ const menuData = {
       },
       {
         name: 'Wildroot',
-        description: 'erbal heat with ginger kick Warm, \nspicy & unapologetically bold | Healing & energizing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Immunity boost & spice lovers',
+        description: 'erbal heat with ginger kick Warm, \nspicy & unapologetically bold | Healing & energizing \nSweetness: ⬤⬤〇〇〇 \nBest for: Immunity boost & spice lovers',
         priceSmall: '59',
         price: '79',
         badges: ['Must Try', 'Healthy', 'Spicy', 'Less Sweet', 'New'],
@@ -471,7 +471,7 @@ const menuData = {
       },
       {
         name: 'Masala Chai',
-        description: 'Authentic Indian chai with spices Traditional tea perfection\nWarm & comforting \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Classic chai enthusiasts',
+        description: 'Authentic Indian chai with spices Traditional tea perfection\nWarm & comforting \nSweetness: ⬤⬤⬤〇〇 \nBest for: Classic chai enthusiasts',
         priceSmall: '69',
         price: '89',
         badges: ['Spicy', 'Healthy','Sweet', 'New'],
@@ -479,7 +479,7 @@ const menuData = {
       },
       {
         name: 'Detox',
-        description: 'Calming fennel (saunf) drink Soothing digestive night drink\nLight & refreshing \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: After-dinner relaxation',
+        description: 'Calming fennel (saunf) drink Soothing digestive night drink\nLight & refreshing \nSweetness: ⬤⬤〇〇〇 \nBest for: After-dinner relaxation',
         priceSmall: '59',
         price: '69',
         badges: ['Healthy', 'Unique','Refreshing', 'Less Sweet', 'New'],
@@ -487,7 +487,7 @@ const menuData = {
       },
       {
         name: 'Specialty Black Coffee',
-        description: 'freshly brewed specialty Arabica beans \nSmooth & strong \nBitterness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Coffee purists',
+        description: 'freshly brewed specialty Arabica beans \nSmooth & strong \nBitterness: 〇〇〇〇〇 \nBest for: Coffee purists',
         priceSmall: '119',
         price: '139',
         badges: ['Healthy', 'Coffee',  , 'Less Sweet', 'New'],
@@ -495,7 +495,7 @@ const menuData = {
       },
       {
         name: 'Instant Coffee',
-        description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇 \nBest for: Roadside Coffee Lover',
+        description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤〇〇 \nBest for: Roadside Coffee Lover',
         priceSmall: '59',
         price: '79',
         badges: ['Coffee', 'Sweet'],
@@ -503,7 +503,7 @@ const menuData = {
       },
       {
         name: 'Instant Black Coffee',
-        description: 'Simply milk coffee\nFast & familiar \nSweetness: ⬤⬤⬤⬤〇〇〇〇\nBest for: Roadside Coffee Lover',
+        description: 'Simply milk coffee\nFast & familiar \nSweetness: 〇〇〇〇〇\nBest for: Roadside Coffee Lover',
         priceSmall: '59',
         price: '79',
         badges: ['Coffee',  , 'Less Sweet'],
