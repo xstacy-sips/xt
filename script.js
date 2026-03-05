@@ -627,7 +627,7 @@ const menuData = {
       const card = document.createElement('article');
       card.className = `menu-item ${item.outOfStock ? 'out-of-stock' : ''}`;
       const manualBadges = getManualBadges(item);
-      card.dataset.tags = manualBadges.map((badge) => badgeSlug(badge)).join( );
+      card.dataset.tags = manualBadges.map((badge) => badgeSlug(badge)).join(' ');
 
       const imageSrc = item.name
         ? `./assets/images/Doddel Drinks/${encodeURIComponent(item.name)}.jpg`
@@ -753,7 +753,7 @@ const menuData = {
     const scored = [];
 
     cards.forEach(card => {
-      const itemTags = (card.dataset.tags || '').split( ).filter(Boolean);
+      const itemTags = (card.dataset.tags || '').split(' ').filter(Boolean);
 
       // Count how many selected tags match
       const matchCount = activeTags.filter(tag => itemTags.includes(tag)).length;
