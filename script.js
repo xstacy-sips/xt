@@ -63,7 +63,7 @@ const menuData = {
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller', 'Fruity', 'Less Sweet',  'Refreshing',],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Blockbuster',
@@ -80,7 +80,7 @@ const menuData = {
         priceSmall: '115',
         price: '129',
         badges: ['Must Try',  'Unique','Coffee', 'Tangy', 'New'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'After Lunch',
@@ -96,7 +96,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Refreshing', 'Tangy', 'Fruity'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Starlight',
@@ -104,7 +104,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Refreshing', 'Fruity', 'Sweet'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Rio',
@@ -112,7 +112,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Must Try', 'Spicy', 'Tangy'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Margarita',
@@ -127,7 +127,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Sweet', 'Fruity'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Pinacolada',
@@ -135,7 +135,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller',  'Refreshing','Sweet', 'Fruity'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'GrassHopper',
@@ -151,7 +151,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller','Fruity', 'Refreshing', 'Sweet'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Lotus',
@@ -161,14 +161,15 @@ const menuData = {
         badges: ['Fruity', 'Sweet'],
         outOfStock: false
       },
-      {
-        name: 'Forest',
-        description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤〇〇\nBest for: Detox vibes',
-        priceSmall: '79',
-        price: '89',
-        badges: [ 'Refreshing', 'Tangy', 'Less Sweet', 'New'],
-        outOfStock: false
-      },
+
+      // {
+      //   name: 'Forest',
+      //   description: 'Cucumber, Lime & Salt | Ultra-Hydrating \nSweetness: ⬤⬤⬤〇〇\nBest for: Detox vibes',
+      //   priceSmall: '79',
+      //   price: '89',
+      //   badges: [ 'Refreshing', 'Tangy', 'Less Sweet', 'New'],
+      //   outOfStock: false
+      // },
       
       {
         name: 'Sunshine',
@@ -184,7 +185,7 @@ const menuData = {
         priceSmall: '79',
         price: '89',
         badges: ['Tangy', 'Less Sweet'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Ice Tea',
@@ -285,7 +286,7 @@ const menuData = {
         priceSmall: '135',
         price: '149',
         badges: ['Must Try', 'Sweet', 'Fruity', 'New'],
-        outOfStock: false
+        outOfStock: true
       },
       {
         name: 'Specialty Iced latte',
@@ -295,14 +296,14 @@ const menuData = {
         badges: ['Bestseller', 'Coffee', 'Less Sweet', 'New'],
         outOfStock: false
       },
-      {
-        name: 'Creamy crust',
-        description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤〇〇 \nBest for: Custard apple lovers',
-        priceSmall: '119',
-        price: '139',
-        badges: ['Sweet', 'Fruity'],
-        outOfStock: false
-      },
+      // {
+      //   name: 'Creamy crust',
+      //   description: 'Custard Apple with Vanilla cream | Smooth & delicate \nSweetness: ⬤⬤⬤〇〇 \nBest for: Custard apple lovers',
+      //   priceSmall: '119',
+      //   price: '139',
+      //   badges: ['Sweet', 'Fruity'],
+      //   outOfStock: false
+      // },
       {
         name: 'Berry Pop',
         description: 'Mixed Berries & popcorn | Fun & fruity\nSweetness: ⬤⬤⬤⬤〇 \nBest for: Playful taste adventurers',
@@ -547,7 +548,7 @@ const menuData = {
         name: 'Nut Mix',
         price: '109',
         badges: ['Healthy', 'Less Sweet'],
-        outOfStock: false
+        outOfStock: true
       }
     ]
   }
