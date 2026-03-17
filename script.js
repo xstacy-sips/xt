@@ -63,7 +63,7 @@ const menuData = {
         priceSmall: '115',
         price: '129',
         badges: ['Bestseller', 'Fruity', 'Less Sweet',  'Refreshing',],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Blockbuster',
@@ -80,7 +80,7 @@ const menuData = {
         priceSmall: '115',
         price: '129',
         badges: ['Must Try',  'Unique','Coffee', 'Tangy', 'New'],
-        outOfStock: true
+        outOfStock: false
       },
       {
         name: 'After Lunch',
@@ -127,7 +127,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Sweet', 'Fruity'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Pinacolada',
@@ -135,7 +135,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller',  'Refreshing','Sweet', 'Fruity'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'GrassHopper',
