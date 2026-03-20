@@ -96,7 +96,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Refreshing', 'Tangy', 'Fruity'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Starlight',
@@ -104,7 +104,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller', 'Refreshing', 'Fruity', 'Sweet'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Rio',
@@ -112,7 +112,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Must Try', 'Spicy', 'Tangy'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Margarita',
