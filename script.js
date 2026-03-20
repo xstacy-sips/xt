@@ -120,7 +120,8 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Refreshing', 'Tangy', 'Less Sweet', 'New'],
-        outOfStock: false},
+        // outOfStock: true
+      },
       {
         name: 'Cinderella',
         description: 'Peach& Salt | Vibrant & Salty\nSweetness: ⬤⬤⬤⬤⬤ \nBest for: Shikanji Lovers',
@@ -151,7 +152,7 @@ const menuData = {
         priceSmall: '89',
         price: '99',
         badges: ['Bestseller','Fruity', 'Refreshing', 'Sweet'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Lotus',
@@ -185,7 +186,7 @@ const menuData = {
         priceSmall: '79',
         price: '89',
         badges: ['Tangy', 'Less Sweet'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Ice Tea',
@@ -286,7 +287,7 @@ const menuData = {
         priceSmall: '135',
         price: '149',
         badges: ['Must Try', 'Sweet', 'Fruity', 'New'],
-        outOfStock: true
+        // outOfStock: true
       },
       {
         name: 'Specialty Iced latte',
