@@ -156,7 +156,7 @@ const menuData = {
       },
       {
         name: 'Lotus',
-        description: 'Litchi & Rose | Elegant & Romantic \nSweetness: ⬤⬤⬤⬤⬤\nBest for: Minimalists & romantics',
+        description: 'Litchi & Rose & Ber rys| Elegant & Romantic \nSweetness: ⬤⬤⬤⬤⬤\nBest for: Minimalists & romantics',
         priceSmall: '89',
         price: '79',
         badges: ['Fruity', 'Sweet'],
@@ -233,22 +233,22 @@ const menuData = {
     subtitle: 'Cremmy drinks made with Fruits, Spices & Milk',
     note: 'Add Protine scoop for 70',
     items: [
-      {
-        name: 'Chocolate Protein',
-        description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
-        priceSmall: '199',
-        price: '299',
-        badges: ['Healthy', 'Chocolaty', 'New'],
-        outOfStock: false
-      },
-      {
-        name: 'Almond Spice',
-        description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤〇〇〇〇 \nBest for: Calorie Conscious',
-        priceSmall: '249',
-        price: '349',
-        badges: ['Healthy',  'Unique','Less Sweet', 'New'],
-        outOfStock: false
-      },
+      // {
+      //   name: 'Chocolate Protein',
+      //   description: 'HEALTHY Chocolate & Protein blend | Post-workout treat \nSweetness: ⬤⬤⬤〇〇 \nBest for: Fitness enthusiasts & choco-lovers',
+      //   priceSmall: '199',
+      //   price: '299',
+      //   badges: ['Healthy', 'Chocolaty', 'New'],
+      //   outOfStock: false
+      // },
+      // {
+      //   name: 'Almond Spice',
+      //   description: 'Almond milk with warming spices Fat-loss friendly spiced delight \nNutty & aromatic \nSweetness: ⬤〇〇〇〇 \nBest for: Calorie Conscious',
+      //   priceSmall: '249',
+      //   price: '349',
+      //   badges: ['Healthy',  'Unique','Less Sweet', 'New'],
+      //   outOfStock: false
+      // },
       {
         name: 'Liquid Diet',
         description: 'Multi-grain nut powerhouse meal in a glass | Filling & nutritious \nSweetness: ⬤⬤〇〇〇 \nBest for: Weight Gainer',
@@ -281,14 +281,14 @@ const menuData = {
         badges: ['Bestseller', 'Sweet', 'Tangy', 'Fruity'],
         outOfStock: false
       },
-      {
-        name: 'MangoVelvet',
-        description: 'Mangoes & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Mango season lovers',
-        priceSmall: '135',
-        price: '149',
-        badges: ['Must Try', 'Sweet', 'Fruity', 'New'],
-        // outOfStock: true
-      },
+      // {
+      //   name: 'Midevil',
+      //   description: ' & Velvet cake Essence | Tropical indulgence \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Mango season lovers',
+      //   priceSmall: '135',
+      //   price: '149',
+      //   badges: ['Must Try', 'Sweet', 'Fruity', 'New'],
+      //   // outOfStock: true
+      // },
       {
         name: 'Specialty Iced latte',
         description: 'Freshly brewed specialty Arabica beans | Smooth & strong \nBitterness: ⬤⬤〇〇〇 \nBest for: Coffee purists',
@@ -347,7 +347,7 @@ const menuData = {
       },
       {
         name: 'Pink Candy',
-        description: 'Litchi with Berries | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Sweet tooths',
+        description: 'Litchi with Berries and Rose | Sweet & Tangy \nSweetness: ⬤⬤⬤⬤〇 \nBest for: Sweet tooths',
         priceSmall: '99',
         price: '119',
         badges: ['Sweet', 'Fruity', 'Tangy', 'New'],
